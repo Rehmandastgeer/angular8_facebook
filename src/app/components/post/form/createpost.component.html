@@ -1,0 +1,33 @@
+<div class="container post">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="post-info">
+        <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
+        <h2>Post Here</h2>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <h1>Post</h1>
+      <form>
+        <div class="form-group">
+          <label class="control-label col-sm-2">Content:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="Title">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2">Rating:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="Author">
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <button class="btn btn-primary" (click)="showposts()">ShowPosts</button>
+            <button class="btn btn-primary" (click)="onSubmit()">Create</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

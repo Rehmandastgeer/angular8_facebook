@@ -1,0 +1,15 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+.Signup{
+  float: left;
+}
+  .col-md-3{
+    background: #bd8c43;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.container{
+  margin-top: 40px;
+}

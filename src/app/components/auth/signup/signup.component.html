@@ -1,0 +1,53 @@
+<div class="container register">
+	<div class="row">
+		<div class="col-md-9">
+       <h1>Signup</h1>         
+      <form>
+            <div class="row"  *ngIf="showmsg">
+                <div class="col-xs-12">
+                <p class="alert alert-success">
+                    <strong>Registration Successful!</strong> 
+                </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Username:</label>
+                    <div class="col-sm-10">
+                       <input type="text"  class="form-control" [(ngModel)]='user.user_name' name="username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="text"  class="form-control" [(ngModel)]='user.email' name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Password:</label>
+                    <div class="col-sm-10">
+                        <input type="text"  class="form-control" [(ngModel)]='user.password' name="password">
+                    </div>
+                 </div>
+                 <div class="form-group">
+                    <label class="control-label col-sm-2">DOB:</label>
+                    <div class="col-sm-10">
+                        <input type="text"  class="form-control" [(ngModel)]='user.dob' name="dob">
+                    </div>
+                 </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Phone:</label>
+                    <div class="col-sm-10">
+                        <input type="text"  class="form-control" [(ngModel)]='user.phone' name="phone">
+                    </div>
+                 </div>
+                <div class="form-group">        
+                        <button class="btn btn-primary" style="margin-left: 20px;" (click)="onSubmit()" type="submit">Submit</button>
+                        <button class="btn btn-primary" style="margin-left: 20px;" (click)="back()">Back</button>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+

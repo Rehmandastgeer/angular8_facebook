@@ -1,0 +1,20 @@
+<div class="container">
+  <ngb-tabset type="pills" [justify]="currentJustify">
+    <ngb-tab title="My Feed">
+      <ng-template ngbTabContent>
+        <app-posts [postListing]=false [userId]=user.id [postsList]=posts></app-posts>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab>
+      <ng-template ngbTabTitle><b>All</b> Feed</ng-template>
+      <ng-template ngbTabContent>
+        <app-posts [postListing]=true [userId]=0 [postsList]=allPosts></app-posts>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="User">
+      <ng-template ngbTabContent>
+        {{user.user_name}}
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>
